@@ -1,0 +1,23 @@
+.TH musje2abc 1 musje2abc\-VERSION
+.SH NAME
+musje2abc \- converts music from Musje 123 format to ABC
+.SH SYNOPSIS
+.B musje2abc
+.RB [ \-v ]
+.SH DESCRIPTION
+musje2abc converts music written in Musje 123 format into ABC format.
+It expect the data in the standard input stream, and prints output to
+the standard output stream.
+.P
+Both Musje 123 and ABC text-based formats, but Musje 123 is designed
+to resemble the numbered musical notation (jianpu) popular in China,
+while ABC is a textual representation of the Western stave notation.
+.P
+Musje2abc tries to follow the format understood by the Musje web application.
+In addition, it supports /1=K syntax for choosing the key, and arbitrary
+number of note lengtheners (so that 1---. can be written 1-----).
+.SH OPTIONS
+This program doesn't accept any options.
+.SH SEE ALSO
+.BR abcm2ps (1),
+.BR abc2midi (1)
